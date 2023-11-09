@@ -20,8 +20,8 @@ Fixed::Fixed(const float number) //new one
 
 Fixed::Fixed(const Fixed& other)
 {
-	std::cout << "Copy constructor called" << std::endl;
 	*this = other;
+	std::cout << "Copy constructor called" << std::endl;
 	return;
 }
 
@@ -33,8 +33,8 @@ Fixed::~Fixed(void)
 
 Fixed&	Fixed::operator=(const Fixed& other)
 {
-	std::cout << "Copy assignment operator called" << std::endl;
 	this->_value = other.getRawBits();
+	std::cout << "Copy assignment operator called" << std::endl;
 	return *this;
 }
 
